@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Digital Assets Store</h1>
+        <p>Akses produk digital premium secara instan</p>
+    </header>
+
+    <main class="container">
+        <div class="card" data-name="E-Book Python Mastery" data-price="150.000">
+            <div class="card-content">
+                <span class="badge">E-Book</span>
+                <h2>Mastering Python 2024</h2>
+                <p>Panduan lengkap dari dasar hingga mahir.</p>
+                <div class="price">Rp 150.000</div>
+                <button class="btn-buy">Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="card" data-name="UI Kit Dashboard" data-price="250.000">
+            <div class="card-content">
+                <span class="badge">Template</span>
+                <h2>UI Kit Dashboard</h2>
+                <p>Template desain modern untuk admin panel.</p>
+                <div class="price">Rp 250.000</div>
+                <button class="btn-buy">Beli Sekarang</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Konfirmasi Pesanan</h2>
+            <p id="modalProductText"></p>
+            <p>Silakan pilih metode pembayaran:</p>
+            <select id="paymentMethod">
+                <option value="WhatsApp">WhatsApp (Manual)</option>
+                <option value="DANA">DANA / QRIS</option>
+            </select>
+            <button id="confirmBtn" class="btn">Lanjutkan Pembayaran</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
